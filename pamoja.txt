@@ -1,0 +1,810 @@
+This is a website for an NGO called Pamoja Outreach Foundation. 
+This NGO is dedicated to catering for the vulnerable and less privilidged families in the ghetto areas of Kampala city. 
+So, this website is to convert visitors into donors or sponsors. And it does that through clear communication through text & visual content.
+This content is accompanied by verified figures from feedback from the community and organization analytics. 
+So, I need you to build with website following the instructions I give strictly. 
+Below are the non negotiables; 
+1. The website must be blazing fast.
+2. Security. The website must be secure enough from malicious actors.
+3. SEO Optimization. The website must be ranked highly by search engines.
+4. Accessibility. The website must be accessible and readable by all forms of people.
+4. Trust: The website must be able to convert visitors into donors or supporters.
+STUDY THE CODEBASE PROPERLY AND CAREFULLY. SCRUTINIZE THROUGH EACH AND EVERY DETAIL TO UNDERSTAND PROPERLY WHAT HAS BEEN DONE, WHAT NEEDS TO BE DONE AND EVERYTHING ELSE. 
+THIS WAS MY COMMUNICATION TO MY DEVELOPER; 
+# Website Development Brief: Pamoja Outreach Foundation
+
+## Project Overview
+Development of a responsive, fast-loading, and elegant website for Pamoja Outreach Foundation, a non-governmental organization (NGO) based in Kampala, Uganda. The organization is headed by Mr. Akuma Jamal and is dedicated to providing charity and assistance to vulnerable populations including:
+- Elderly persons
+- Orphans
+- Financially constrained individuals
+- Sick persons
+- Disabled persons
+
+This website must be super fast, elegant, and fully responsive across all screen sizes (mobile phones, tablets, laptops, desktops, and large screens).
+
+---
+
+## Design Reference Template - DETAILED DESCRIPTION
+
+### CRITICAL: You MUST strictly follow the attached charity website template design
+
+I have attached a reference website template that shows EXACTLY the design pattern and layout I want. Here's what I see in that template and what you must replicate:
+
+#### Template Color Scheme
+The template uses:
+- Deep forest green/teal as primary color
+- Bright yellow/gold accents
+- White backgrounds with colored sections
+- Clean, modern card-based layouts
+
+**IMPORTANT**: Instead of the green in the template, you will use the navy blue and blue gradient colors from the Pamoja Outreach Foundation logo I've attached. Use blues and complementary colors that work harmoniously with blue throughout the design.
+
+#### Template Navigation Bar
+- Fixed/sticky navigation that stays at the top as you scroll
+- Logo on the left
+- Menu items in the center: Home, Campaigns, About Us, Pages, Blog, Contacts
+- Search icon and user icon
+- "DONATE NOW" button in a distinct color on the right
+- Clean, professional spacing
+
+**For our site**: Navigation items should be: Home | About Us | What We Do | Recent Works | Contact Us + DONATE NOW button
+
+#### Template Hero Section Layout
+The template shows:
+- Full-width hero banner with split design
+- Left side: Dark colored background (green in template - use navy blue for us) with:
+  - "NON-PROFIT CHARITY" label
+  - Large headline: "Give Hope To Children In Need."
+  - Two buttons: "DONATE NOW" (solid colored) and "VIDEO PLAYING THEME" (outlined)
+  - Decorative elements/patterns
+- Right side: Large hero image of smiling children with yellow accent background
+- Decorative floral/sunburst graphics
+- Overall clean, modern, inspiring design
+
+**REPLICATE THIS EXACT LAYOUT** but with our colors and content.
+
+#### Template "What We Do" Section Style
+The template shows three card-style boxes with:
+- Images of children/beneficiaries
+- Overlay with program titles
+- Icons/buttons
+- Hover effects
+- Rounded corners
+- Clean spacing between cards
+
+**You must create similar cards for our four focus areas** (Orphan Support, Elderly Care, Medical Assistance, Education Sponsorship).
+
+#### Template Statistics/Impact Section
+The template shows:
+- Large images of beneficiaries
+- Statistics with percentages (59%, 58%)
+- "Save Water", "Education" labels
+- Testimonial quote with attribution
+- Clean typography
+- "ABOUT US" button
+
+**Adapt this for our About Us section** with relevant statistics about our impact (use placeholders).
+
+#### Template "Delivering Solutions" Section
+The template shows:
+- Dark green/teal background (use navy blue for us)
+- White text on dark background
+- Title: "HOW WE HELP" / "Delivering Solutions"
+- Grid of white cards with:
+  - Images in rounded frames
+  - Program titles in bold
+  - Descriptions
+  - Clean spacing
+- "EXPLORE MORE" button at bottom
+
+**This is EXACTLY what I want for our "What We Do" section.**
+
+#### Template Card Design Pattern
+Throughout the template, cards have:
+- Rounded corners (border-radius)
+- Drop shadows for depth
+- Hover effects (subtle lift/scale)
+- Clean white backgrounds
+- Consistent padding and spacing
+- High-quality images
+- Clear typography hierarchy
+
+**Use this card pattern consistently throughout our site.**
+
+#### Template Footer
+The template footer shows:
+- Dark background
+- Multiple columns with:
+  - Logo and description
+  - Quick links
+  - Contact information
+  - Social media icons
+- Clean organization
+- Copyright notice at bottom
+
+**Replicate this footer structure for our site.**
+
+---
+
+## Technical Requirements - CRITICAL SPECIFICATIONS
+
+### Performance Optimization (TOP PRIORITY)
+The website MUST be **super fast**. Implement the following:
+
+1. **Image Optimization**:
+   - All images must be compressed and optimized for web
+   - Use modern image formats (WebP with fallbacks)
+   - Implement lazy loading for images below the fold
+   - Use responsive images with srcset for different screen sizes
+   - Maximum image file size: 200KB for large images, 50KB for thumbnails
+
+2. **Code Optimization**:
+   - Minify all CSS files
+   - Minify all JavaScript files
+   - Remove unused CSS and JavaScript
+   - Combine files where possible to reduce HTTP requests
+   - Use async/defer for non-critical JavaScript
+
+3. **Caching**:
+   - Implement browser caching with appropriate cache headers
+   - Set long cache times for static assets
+
+4. **Loading Strategy**:
+   - Critical CSS inline in head
+   - Non-critical CSS loaded asynchronously
+   - Defer non-critical JavaScript
+   - Optimize font loading (font-display: swap)
+
+5. **Performance Targets**:
+   - Page load time: Under 3 seconds on 3G
+   - First Contentful Paint: Under 1.5 seconds
+   - Time to Interactive: Under 3.5 seconds
+   - Lighthouse Performance Score: 90+
+
+### Responsive Design (MANDATORY)
+The website MUST be fully responsive and look perfect on:
+- Mobile phones (320px - 480px)
+- Large mobile phones (481px - 767px)
+- Tablets portrait (768px - 1024px)
+- Tablets landscape and small laptops (1025px - 1280px)
+- Laptops and desktops (1281px - 1920px)
+- Large screens (1921px+)
+
+**Testing Required**: Test on actual devices, not just browser dev tools.
+
+### Browser Compatibility
+Must work flawlessly on:
+- Google Chrome (latest 2 versions)
+- Mozilla Firefox (latest 2 versions)
+- Safari (latest 2 versions)
+- Microsoft Edge (latest 2 versions)
+- Mobile browsers: Chrome Mobile, Safari iOS
+
+### Navigation Bar Requirements
+- **Fixed/Sticky Navigation**: The navigation bar MUST remain visible at the top of the viewport as the user scrolls down the page
+- Smooth scroll behavior when clicking menu links
+- Active state showing current section
+- Mobile: Hamburger menu that slides in/out smoothly
+- Logo clickable and returns to top
+- "DONATE NOW" button prominently styled, links to Contact Form section (not payment gateway - we'll add that later)
+
+---
+
+## SEO OPTIMIZATION - TOP PRIORITY
+
+### Critical SEO Requirements
+
+1. **Meta Tags** (MUST be implemented on every page):
+```html
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pamoja Outreach Foundation - A Kampala-based NGO providing charitable assistance to vulnerable populations including elderly, orphans, financially constrained, sick, and disabled persons.">
+<meta name="keywords" content="charity Uganda, NGO Kampala, orphan support, elderly care, medical assistance, education sponsorship, vulnerable people, charity organization">
+<meta name="author" content="Pamoja Outreach Foundation">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="[WEBSITE_URL]">
+```
+
+2. **Open Graph Tags for Social Media** (MANDATORY):
+```html
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pamoja Outreach Foundation - Give Hope to the Vulnerable">
+<meta property="og:description" content="Kampala-based NGO dedicated to providing charity and assistance to elderly, orphans, financially constrained, sick, and disabled persons.">
+<meta property="og:image" content="[URL_TO_LOGO_OR_HERO_IMAGE]">
+<meta property="og:url" content="[WEBSITE_URL]">
+<meta property="og:site_name" content="Pamoja Outreach Foundation">
+<meta property="og:locale" content="en_US">
+```
+
+3. **Twitter Card Tags**:
+```html
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pamoja Outreach Foundation - Give Hope to the Vulnerable">
+<meta name="twitter:description" content="Kampala-based NGO dedicated to providing charity and assistance to vulnerable populations.">
+<meta name="twitter:image" content="[URL_TO_LOGO_OR_HERO_IMAGE]">
+```
+
+4. **Semantic HTML Structure**:
+   - Use proper HTML5 semantic tags: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`
+   - Proper heading hierarchy: Single `<h1>` per page, then `<h2>`, `<h3>` etc. in order
+   - Use `<figure>` and `<figcaption>` for images with descriptions
+   - Use `<address>` for contact information
+
+5. **Structured Data (Schema.org)**:
+Implement JSON-LD structured data for:
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Pamoja Outreach Foundation",
+  "description": "Charity organization providing assistance to vulnerable populations",
+  "url": "[WEBSITE_URL]",
+  "logo": "[LOGO_URL]",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kampala",
+    "addressRegion": "Central Region",
+    "addressCountry": "UG"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "[EMAIL_PLACEHOLDER]",
+    "contactType": "customer service"
+  },
+  "sameAs": [
+    "[FACEBOOK_URL]",
+    "[INSTAGRAM_URL]",
+    "[TWITTER_URL]",
+    "[TIKTOK_URL]",
+    "[YOUTUBE_URL]"
+  ]
+}
+```
+
+6. **Image SEO**:
+   - Every image MUST have descriptive `alt` attributes
+   - Use descriptive file names (e.g., `pamoja-orphan-support-program.jpg` not `img001.jpg`)
+   - Include title attributes where helpful
+
+7. **URL Structure**:
+   - Clean, descriptive URLs
+   - Use hyphens for spaces
+   - Lowercase only
+   - Include keywords where natural
+
+8. **Performance SEO**:
+   - Fast loading speed (impacts ranking)
+   - Mobile-friendly (Google mobile-first indexing)
+   - HTTPS (when hosted - recommend to client)
+
+9. **Additional SEO Elements**:
+   - XML sitemap (generate and include)
+   - Robots.txt file
+   - Favicon (multiple sizes for different devices)
+   - 404 error page with navigation back to home
+
+---
+
+## Website Sections - DETAILED SPECIFICATIONS
+
+### 1. Hero Section (First Impression - CRITICAL)
+
+**Layout Pattern** (following template):
+- Full viewport height (100vh) or near full height
+- Two-column split design on desktop:
+  - **Left Column (40-50% width)**: Navy blue background
+    - "NON-PROFIT CHARITY" label (small text, light color)
+    - Main headline: "Give Hope To Children In Need." (very large, bold, white text)
+    - Subheadline: Brief mission statement (1-2 sentences, use placeholder)
+    - Button group:
+      - Primary button: "DONATE NOW" (solid color, bright - use yellow/orange accent)
+      - Secondary button: "LEARN MORE" (outlined/ghost style)
+    - Decorative graphic elements from template
+  - **Right Column (50-60% width)**: 
+    - Large hero image of smiling African children (use contextually appropriate placeholder)
+    - Yellow or bright accent background panel behind/beside image
+    - Decorative sunburst or floral graphic elements
+- Mobile: Stack vertically, image on top
+
+**Specific Elements**:
+- Hero image: High-quality, emotionally engaging photo of African children or vulnerable community members
+- Text must be easily readable with high contrast
+- Buttons must have hover effects (color shift, slight elevation)
+- Smooth entrance animations (fade in, slide up) on page load
+- Scroll indicator/arrow at bottom
+
+**Content Placeholders**:
+- Main headline: "Give Hope To Children In Need." or "Empowering Lives, Transforming Communities"
+- Subheadline: "Pamoja Outreach Foundation is dedicated to providing charitable assistance to the most vulnerable members of our society in Kampala, Uganda."
+
+**Image Requirements**:
+- Minimum resolution: 1920x1080px
+- Must show happy, dignified African people (children, elderly, or community)
+- Easily replaceable via clear file path: `/images/hero/hero-main.jpg`
+
+### 2. About Us Section
+
+**Layout Pattern** (following template's statistics section):
+- Two-column layout on desktop
+- **Left Column**:
+  - Large featured image of beneficiaries or Mr. Akuma Jamal
+  - Smaller secondary image overlapping or beside it
+  - Both images in decorative frames/borders
+- **Right Column**:
+  - Section label: "ABOUT US" or "WHO WE ARE"
+  - Heading: "About Pamoja Outreach Foundation"
+  - Body text: Organization description (3-4 paragraphs, use placeholder)
+  - Key statistics with large numbers and icons:
+    - People helped (use placeholder number with % or count)
+    - Years of service (placeholder)
+    - Communities reached (placeholder)
+    - Programs running (4)
+  - Testimonial quote box with attribution
+  - "LEARN MORE" button
+
+**Specific Content to Include**:
+1. **Organization Name**: Pamoja Outreach Foundation
+2. **Location**: Based in Kampala, Uganda
+3. **Leadership**: Headed by Mr. Akuma Jamal
+4. **Mission Statement** (placeholder text about):
+   - Commitment to serving vulnerable populations
+   - Focus on dignity and empowerment
+   - Community-centered approach
+5. **Target Beneficiaries** (clearly state):
+   - Elderly persons
+   - Orphans
+   - Financially constrained individuals
+   - Sick persons
+   - Disabled persons
+6. **Impact Statistics** (use placeholders):
+   - "500+ Families Supported"
+   - "200+ Children in School"
+   - "50+ Elderly Receiving Care"
+   - "100+ Medical Interventions"
+
+**Image Requirements**:
+- 2-3 high-quality images
+- Show diverse beneficiaries (children, elderly, community)
+- If possible, include image of Mr. Akuma Jamal or team
+- Paths: `/images/about/about-main.jpg`, `/images/about/about-secondary.jpg`
+
+**Design Elements**:
+- Statistics displayed with large numbers and icons
+- Testimonial box with light background and quotation marks
+- Clean typography with good spacing
+- Hover effects on images (subtle zoom or overlay)
+
+### 3. What We Do Section - "Delivering Solutions"
+
+**Layout Pattern** (EXACTLY like template's "Delivering Solutions" section):
+- Full-width section with **navy blue background** (dark, like the template's green)
+- White text on dark background
+- Section header centered:
+  - Small label: "HOW WE HELP" (uppercase, light color)
+  - Large heading: "Delivering Solutions" (white, bold, large)
+  - Brief description paragraph (white, smaller text)
+- **Grid of 4 white cards** (2x2 on desktop, 1 column on mobile):
+
+**Card Design** (CRITICAL - follow template exactly):
+Each card must have:
+- White background with rounded corners
+- Featured image at top in rounded frame/border
+- Program icon or small badge
+- Program title in bold, dark text
+- Description paragraph (2-3 sentences)
+- Visual consistency across all cards
+- Drop shadow for depth
+- Hover effect (subtle lift/elevation, scale 1.02)
+- Equal height cards with flexbox
+
+**The 4 Programs/Cards**:
+
+1. **Orphan Support**
+   - Image: Placeholder of African children/orphans
+   - Icon: Child or heart symbol
+   - Title: "Orphan Support & Care"
+   - Description (placeholder): "Providing comprehensive support to orphaned children including shelter, nutrition, education, and emotional care. We ensure every child has the opportunity to grow in a safe, loving environment."
+   
+2. **Elderly Care**
+   - Image: Placeholder of elderly African person
+   - Icon: Elderly/care symbol
+   - Title: "Elderly Care Services"
+   - Description (placeholder): "Offering dignity and support to elderly community members through healthcare assistance, social engagement, nutritional support, and companionship programs."
+
+3. **Medical Assistance**
+   - Image: Placeholder of medical care or health clinic
+   - Icon: Medical cross or health symbol
+   - Title: "Medical Assistance Program"
+   - Description (placeholder): "Providing essential medical care and health services to those who cannot afford treatment. We facilitate access to doctors, medication, and emergency care."
+
+4. **Education Sponsorship**
+   - Image: Placeholder of students/children learning
+   - Icon: Book or education symbol
+   - Title: "Education Sponsorship"
+   - Description (placeholder): "Sponsoring children's education through school fees, scholastic materials, uniforms, and mentorship. We believe education is the key to breaking the cycle of poverty."
+
+**Bottom of Section**:
+- Centered "EXPLORE MORE" button (outlined, white border, white text, hover fill)
+
+**Image Requirements**:
+- Each program needs 1 high-quality placeholder image
+- Images must be contextually appropriate (African setting, relevant to program)
+- Paths: `/images/programs/orphan-support.jpg`, `/images/programs/elderly-care.jpg`, etc.
+- All easily replaceable
+
+**Technical Requirements**:
+- Cards must be equal height (use CSS flexbox or grid)
+- Smooth transitions on hover (0.3s ease)
+- Maintain aspect ratio for images
+- Responsive: 2 columns on tablet, 1 column on mobile
+
+### 4. Recent Works Section
+
+**Layout Pattern** (following template's testimonial/project cards):
+- Section header:
+  - Small label: "OUR IMPACT"
+  - Large heading: "Recent Works & Testimonials"
+  - Optional description
+- **Grid of 4 cards** (2x2 on desktop, 1 column on mobile)
+
+**Content: 2 Testimonial Cards + 2 Project Cards**
+
+#### Testimonial Cards (2 cards):
+
+**Card Design**:
+- Light background (white or very light gray)
+- Large quotation marks graphic at top
+- Testimonial text (2-4 sentences, placeholder)
+- Photo of person giving testimony (circular frame)
+- Name of person (bold)
+- Location or relationship to foundation
+- Star rating or decorative element
+
+**Testimonial 1 Placeholder**:
+- Image: African person (elderly, parent, or beneficiary)
+- Quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pamoja Outreach Foundation changed my life and gave me hope when I had none."
+- Name: "Sarah Nakato"
+- Label: "Beneficiary, Kampala"
+
+**Testimonial 2 Placeholder**:
+- Image: African person (different demographic from first)
+- Quote: "Lorem ipsum dolor sit amet. Thanks to the foundation, my children are now in school and have a bright future ahead."
+- Name: "James Okello"
+- Label: "Parent, Kampala"
+
+#### Project Cards (2 cards):
+
+**Card Design**:
+- Featured project image (larger)
+- Colored overlay or label with project category
+- Project title (bold, prominent)
+- Date and location (small text with icons)
+- Description (2-3 sentences)
+- "READ MORE" or "VIEW PROJECT" link/button
+
+**Project 1: Providing Utilities to the Vulnerable in the Ghetto**
+- Image: Placeholder showing community outreach, distribution of supplies
+- Category label: "Community Support"
+- Title: "Providing Utilities to the Vulnerable in the Ghetto"
+- Date: "December 2024" (placeholder)
+- Location: "Kampala, Uganda"
+- Description (placeholder): "Lorem ipsum dolor sit amet, consectetur adipiscing elit. We distributed essential utilities including water containers, blankets, and household items to vulnerable families living in ghetto areas of Kampala."
+- CTA: "Read More" button/link
+
+**Project 2: Offering Scholastic Materials to Students**
+- Image: Placeholder showing students receiving books, school supplies
+- Category label: "Education"
+- Title: "Offering Scholastic Materials to Students"
+- Date: "November 2024" (placeholder)
+- Location: "Kampala, Uganda"
+- Description (placeholder): "Lorem ipsum dolor sit amet, consectetur adipiscing elit. We provided scholastic materials including books, pens, notebooks, and school bags to underprivileged students to support their education."
+- CTA: "Read More" button/link
+
+**Layout Notes**:
+- All 4 cards should have consistent height and styling
+- Mix testimonials and projects in grid (not grouped together)
+- Suggested order: Testimonial, Project 1, Project 2, Testimonial
+- Or: Alternate in any logical order
+
+**Image Requirements**:
+- Testimonial photos: Circular or square frames, 200x200px minimum
+- Project images: 800x600px minimum, landscape orientation
+- All contextually appropriate to African NGO setting
+- Paths: `/images/testimonials/person-1.jpg`, `/images/projects/utilities-distribution.jpg`, etc.
+
+**Design Elements**:
+- Consistent card shadows and borders
+- Hover effects (slight elevation)
+- Quotation marks for testimonials
+- Icons for date and location in project cards
+- Responsive grid layout
+
+### 5. Contact Us / Reach Out Section
+
+**Layout Pattern**:
+- Two-column layout on desktop (60% form, 40% info)
+- Full-width on mobile (form first, then info)
+- Clean, professional design with good spacing
+
+#### Contact Form (LEFT COLUMN - PRIMARY FEATURE)
+
+**Form Design**:
+- White background form panel with shadow
+- Section heading: "Get In Touch" or "Reach Out to Us"
+- Brief description: "Have questions or want to support our mission? Contact us below."
+
+**Form Fields** (all with proper labels and placeholders):
+
+1. **Full Name** (required)
+   - Input type: text
+   - Placeholder: "Enter your full name"
+   - Validation: Required, minimum 2 characters
+   - Error message: "Please enter your full name"
+
+2. **Email Address** (required)
+   - Input type: email
+   - Placeholder: "your.email@example.com"
+   - Validation: Required, valid email format
+   - Error message: "Please enter a valid email address"
+
+3. **Phone Number** (optional)
+   - Input type: tel
+   - Placeholder: "+256 XXX XXX XXX"
+   - Validation: Optional, but if filled must be valid format
+   - Error message: "Please enter a valid phone number"
+
+4. **Subject** (required)
+   - Input type: text or dropdown
+   - If dropdown, options:
+     - "General Inquiry"
+     - "Donation Information"
+     - "Volunteer Opportunity"
+     - "Partnership"
+     - "Other"
+   - Validation: Required
+   - Error message: "Please select a subject"
+
+5. **Message** (required)
+   - Input type: textarea
+   - Placeholder: "Tell us how we can help or how you'd like to get involved..."
+   - Rows: 6-8
+   - Validation: Required, minimum 10 characters
+   - Error message: "Please enter your message (minimum 10 characters)"
+
+**Submit Button**:
+- Text: "SEND MESSAGE" or "SUBMIT"
+- Full width or prominent size
+- Primary color (blue accent)
+- Hover effect (darker shade, slight elevation)
+- Loading state while submitting (spinner icon, text changes to "Sending...")
+
+**Form Behavior & Validation**:
+- **Client-side validation**: Check all required fields before submission
+- Show validation errors inline below each field in red
+- Prevent submission if validation fails
+- **Server-side validation**: Also validate on backend (if using backend)
+- **Success state**: 
+  - Show success message: "Thank you! Your message has been sent successfully. We'll get back to you soon."
+  - Clear form fields after successful submission
+  - Success message in green with checkmark icon
+- **Error state**: 
+  - If submission fails: "Sorry, something went wrong. Please try again or email us directly at [email]."
+  - Error message in red with alert icon
+
+**Email Configuration** (CRITICAL):
+- Form submissions MUST be sent via email to: **[info@pamojaoutreach.org]** (placeholder - we'll provide actual email later)
+- Email subject line: "Contact Form Submission - [Subject from form]"
+- Email body should include:
+  - Name: [Full Name]
+  - Email: [Email Address]
+  - Phone: [Phone Number] (if provided)
+  - Subject: [Subject]
+  - Message: [Message]
+  - Timestamp: [Date and time of submission]
+  - IP Address: [Optional, for spam prevention]
+
+**Technical Implementation Options**:
+- Use PHP mail() function with proper SMTP configuration
+- OR use service like Formspree, EmailJS, or similar
+- OR provide API endpoint for backend integration
+- Include spam protection (honeypot field, reCAPTCHA optional)
+
+#### Contact Information (RIGHT COLUMN)
+
+**Section Design**:
+- Light background panel or outlined box
+- Icon + text for each contact method
+
+**Display Information**:
+
+1. **Email**:
+   - Icon: Envelope
+   - Label: "Email Us"
+   - Text: "info@pamojaoutreach.org" (placeholder - use actual later)
+   - Make email clickable (mailto: link)
+
+2. **Phone**:
+   - Icon: Phone
+   - Label: "Call Us"
+   - Text: "+256 XXX XXX XXX" (placeholder)
+   - Make phone clickable (tel: link)
+
+3. **Address**:
+   - Icon: Location pin
+   - Label: "Visit Us"
+   - Text: 
+     ```
+     Pamoja Outreach Foundation
+     [Street Address - Placeholder]
+     Kampala, Central Region
+     Uganda
+     ```
+
+4. **Office Hours** (optional):
+   - Icon: Clock
+   - Label: "Office Hours"
+   - Text: "Monday - Friday: 9:00 AM - 5:00 PM"
+
+**Social Media Links Section**:
+- Heading: "Connect With Us" or "Follow Us"
+- Display social media icons in a row
+- Icons must be:
+  - Consistent size (40x40px or similar)
+  - Colored or monochrome (match brand)
+  - Clickable with hover effects (color change, scale up)
+  - Open links in new tab (target="_blank")
+
+**Social Media Platforms** (5 required):
+1. **Facebook**: [https://facebook.com/pamojaoutreach] (placeholder)
+2. **Instagram**: [https://instagram.com/pamojaoutreach] (placeholder)
+3. **TikTok**: [https://tiktok.com/@pamojaoutreach] (placeholder)
+4. **X (Twitter)**: [https://x.com/pamojaoutreach] (placeholder)
+5. **YouTube**: [https://youtube.com/@pamojaoutreach] (placeholder)
+
+**Design Notes**:
+- Use official brand icons for each platform
+- Icons should be FontAwesome, Bootstrap Icons, or similar
+- Arrange horizontally with even spacing
+- Hover effect: Color change to platform's brand color and slight scale (1.1)
+
+#### Additional Elements:
+
+**Optional Map** (if time/resources allow):
+- Embedded Google Maps showing Kampala, Uganda location
+- Placeholder coordinates for now
+- Responsive embed
+
+**Responsive Behavior**:
+- Desktop: Side-by-side columns (form 60%, info 40%)
+- Tablet: Side-by-side with adjusted ratios (50/50)
+- Mobile: Stack vertically (form on top, info below)
+- Form inputs full width on mobile
+
+**Accessibility**:
+- All form fields must have associated `<label>` elements
+- Use `for` attribute to connect labels to inputs
+- ARIA labels where needed
+- Keyboard navigation support
+- Focus states clearly visible
+- Error messages announced to screen readers
+
+### 6. Footer
+
+**Layout Pattern** (following template):
+- **Dark background** (navy blue, matching brand)
+- **White text** for contrast
+- Multi-column layout on desktop (4 columns)
+- Stack vertically on mobile
+
+**Footer Columns**:
+
+#### Column 1: About / Brand (25% width)
+- **Pamoja Outreach Foundation logo** (white version or full color)
+- **Tagline**: "Empowering Lives, Transforming Communities" (placeholder)
+- **Brief description** (2-3 sentences):
+  "Pamoja Outreach Foundation is a Kampala-based NGO dedicated to providing charitable assistance to vulnerable populations including the elderly, orphans, and those in need."
+
+#### Column 2: Quick Links (25% width)
+- **Heading**: "Quick Links"
+- Links (styled, hover effects):
+  - Home
+  - About Us
+  - What We Do
+  - Recent Works
+  - Contact Us
+- All links scroll to respective sections
+
+#### Column 3: Contact Info (25% width)
+- **Heading**: "Contact Us"
+- **Email**: 
+  - Icon + "info@pamojaoutreach.org" (placeholder)
+  - Clickable mailto: link
+- **Phone**: 
+  - Icon + "+256 XXX XXX XXX" (placeholder)
+  - Clickable tel: link
+- **Address**:
+  - Icon + "Kampala, Uganda"
+
+#### Column 4: Follow Us (25% width)
+- **Heading**: "Follow Us"
+- **Social Media Icons** (larger than in contact section):
+  - Facebook
+  - Instagram
+  - TikTok
+  - X (Twitter)
+  - YouTube
+- Arranged in 2 rows or vertically
+- Same hover effects as contact section
+
+**Footer Bottom Bar**:
+- Separated from main footer with border-top
+- Two-part layout:
+  - **Left**: Copyright notice
+    - "© 2024 Pamoja Outreach Foundation. All rights reserved."
+  - **Right**: Optional credits
+    - "Designed by [Your Company Name]" (if desired)
+    - "Privacy Policy | Terms of Service" (links to placeholder pages)
+
+**Design Requirements**:
+- Clean typography hierarchy
+- Proper spacing between columns and elements
+- Divider lines between columns (subtle, light color)
+- Icons for contact info and social media
+- Links with hover effects (underline, color change)
+- Responsive: 4 columns → 2 columns on tablet → 1 column on mobile
+
+**Additional Footer Elements**:
+- Optional: Newsletter signup form
+- Optional: "Back to Top" button (fixed position, appears on scroll)
+
+---
+
+## Typography Specifications
+
+**Font Recommendations**:
+- **Primary Font (Headings)**: 
+  - Poppins, Montserrat, or Raleway (Bold weights)
+  - Google Fonts link: Include in `<head>`
+- **Secondary Font (Body Text)**: 
+  - Open Sans, Roboto, or Lato (Regular, Medium weights)
+  - Easy readability for longer text
+
+**Type Scale**:
+- H1: 48-60px (Hero headlines)
+- H2: 36-42px (Section headings)
+- H3: 28-32px (Subsection headings)
+- H4: 24-26px (Card titles)
+- Body: 16-18px (Paragraphs)
+- Small: 14px (Captions, labels)
+
+**Line Height**:
+- Headings: 1.2-1.3
+- Body text: 1.6-1.8 (for readability)
+
+**Font Weights**:
+- Bold: 700 (Headings)
+- Semi-Bold: 600 (Subheadings)
+- Regular: 400 (Body)
+- Light: 300 (Captions, if needed)
+
+**Responsive Typography**:
+- Scale down font sizes for mobile (H1: 32-36px, H2: 28-32px, etc.)
+- Maintain readability on all screen sizes
+
+---
+
+## Color Palette - SPECIFIC SPECIFICATIONS
+
+**Primary Colors** (from Pamoja logo):
+- **Navy Blue**: #1B3A5F (or similar from logo - extract exact hex)
+- **Globe Blue (Light)**: #4A90E2 (or similar from logo gradient)
+- **Globe Blue (Dark)**: #2E5C8A (or similar from logo gradient)
+
+**Accent Colors** (to work with blues):
+- **Bright Accent**: #FDB913 (Yellow/Gold - for CTAs, highlights)
+- **Secondary Accent**: #00A99D (Teal - optional, for variety)
+
+**Neutral Colors**:
+- **White**: #FFFFFF (Backgrounds, text on dark)
+- **Light Gray**: #F5F5F5
