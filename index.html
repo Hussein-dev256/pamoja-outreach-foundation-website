@@ -11,20 +11,17 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pamoja Outreach Foundation - Give Hope to the Vulnerable">
   <meta property="og:description" content="Kampala-based NGO dedicated to providing charity and assistance to elderly, orphans, financially constrained, sick, and disabled persons.">
-  <meta property="og:image" content="images/branding/Pamoja Logo.svg">
+  <meta property="og:image" content="https://www.pamojaoutreach.org/images/branding/Pamoja%20Logo.svg">
   <meta property="og:url" content="https://www.pamojaoutreach.org/">
   <meta property="og:site_name" content="Pamoja Outreach Foundation">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pamoja Outreach Foundation - Give Hope to the Vulnerable">
   <meta name="twitter:description" content="Kampala-based NGO dedicated to providing charitable assistance to vulnerable populations.">
-  <meta name="twitter:image" content="images/branding/Pamoja Logo.svg">
+  <meta name="twitter:image" content="https://www.pamojaoutreach.org/images/branding/Pamoja%20Logo.svg">
   <title>Pamoja Outreach Foundation | Give Hope To Children In Need</title>
-  <link rel="icon" type="image/svg+xml" href="images/branding/Pamoja Logo.svg">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/branding/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/branding/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="images/branding/favicon-192x192.png">
-  <link rel="apple-touch-icon" href="images/branding/favicon-192x192.png">
+  <link rel="icon" href="images/branding/Pamoja%20Logo.svg" sizes="any" type="image/svg+xml">
+  <link rel="shortcut icon" href="images/branding/Pamoja%20Logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
@@ -91,7 +88,7 @@
     "name": "Pamoja Outreach Foundation",
     "description": "Charity organization providing assistance to vulnerable populations",
     "url": "https://www.pamojaoutreach.org/",
-    "logo": "images/branding/Pamoja Logo.svg",
+    "logo": "https://www.pamojaoutreach.org/images/branding/Pamoja%20Logo.svg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Kampala",
@@ -128,7 +125,7 @@
         </picture>
         <span class="logo-text">Pamoja Outreach</span>
       </div>
-      <button class="hamburger" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
       <div class="nav-links" id="nav-links">
         <a href="#home" class="active">Home</a>
         <a href="#about">About Us</a>
@@ -138,8 +135,7 @@
         <a href="#contact">Contact Us</a>
       </div>
       <div class="nav-actions">
-        <button class="btn btn-ghost" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <button class="btn btn-primary" onclick="document.getElementById('involved').scrollIntoView({behavior:'smooth'})">Get Involved</button>
+        <button class="btn btn-primary" type="button" onclick="document.getElementById('involved').scrollIntoView({behavior:'smooth'})">Get Involved</button>
       </div>
     </nav>
   </header>
@@ -152,8 +148,8 @@
         <p>Many households in ghetto areas carry the weight of poverty, illness, and isolation. We come alongside them with consistent care, education support, and compassionate follow-up so that no one has to struggle alone.</p>
         <p><strong>We are here to listen carefully, act responsibly, and walk with families for the long term.</strong></p>
         <div class="hero-buttons">
-          <button class="btn btn-primary" onclick="document.getElementById('involved').scrollIntoView({behavior:'smooth'})">Get Involved</button>
-          <button class="btn btn-ghost" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Learn More</button>
+          <button class="btn btn-primary" type="button" onclick="document.getElementById('involved').scrollIntoView({behavior:'smooth'})">Get Involved</button>
+          <button class="btn btn-ghost" type="button" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Learn More</button>
         </div>
       </div>
       <div class="hero-right" data-animate>
@@ -206,7 +202,7 @@
             <span class="quote">“</span>
             <p>“This organization restored hope for my family. Their care and support changed our story.”</p>
             <p><strong>Sarah Nakato</strong> — Beneficiary, Kampala</p>
-            <button class="btn btn-ghost" onclick="document.getElementById('programs').scrollIntoView({behavior:'smooth'})">Learn More</button>
+            <button class="btn btn-ghost" type="button" onclick="document.getElementById('programs').scrollIntoView({behavior:'smooth'})">Learn More</button>
           </div>
         </div>
       </div>
@@ -484,24 +480,24 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="2">
-                <span class="error" id="error-name">Please enter your full name</span>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="2" autocomplete="name" aria-describedby="error-name">
+                <span class="error" id="error-name" hidden>Please enter your full name</span>
               </div>
               <div class="form-group">
                 <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-                <span class="error" id="error-email">Please enter a valid email address</span>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required autocomplete="email" aria-describedby="error-email">
+                <span class="error" id="error-email" hidden>Please enter a valid email address</span>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="+256 XXX XXX XXX">
-                <span class="error" id="error-phone">Please enter a valid phone number</span>
+                <input type="tel" id="phone" name="phone" placeholder="+256 XXX XXX XXX" autocomplete="tel" inputmode="tel" aria-describedby="error-phone">
+                <span class="error" id="error-phone" hidden>Please enter a valid phone number</span>
               </div>
               <div class="form-group">
                 <label for="subject">Subject *</label>
-                <select id="subject" name="subject" required>
+                <select id="subject" name="subject" required aria-describedby="error-subject">
                   <option value="">Select a subject</option>
                   <option>General Inquiry</option>
                   <option>Donation Information</option>
@@ -509,13 +505,13 @@
                   <option>Partnership</option>
                   <option>Other</option>
                 </select>
-                <span class="error" id="error-subject">Please select a subject</span>
+                <span class="error" id="error-subject" hidden>Please select a subject</span>
               </div>
             </div>
             <div class="form-group">
               <label for="message">Message *</label>
-              <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help or how you'd like to get involved..." required minlength="10"></textarea>
-              <span class="error" id="error-message">Please enter your message (minimum 10 characters)</span>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help or how you'd like to get involved..." required minlength="10" autocomplete="off" aria-describedby="error-message"></textarea>
+              <span class="error" id="error-message" hidden>Please enter your message (minimum 10 characters)</span>
             </div>
             <input type="text" id="website" name="website" aria-hidden="true" hidden>
             <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
@@ -529,10 +525,10 @@
           <div class="contact-item"><i class="fa-solid fa-clock"></i><div><strong>Office Hours</strong><br>Mon - Fri: 9:00 AM - 5:00 PM</div></div>
           <h4>Connect With Us</h4>
           <div class="social-links">
-            <a href="https://facebook.com/pamojaoutreach" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://instagram.com/pamojaoutreach" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://tiktok.com/@pamojaoutreach" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://youtube.com/@pamojaoutreach" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com/pamojaoutreach" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com/pamojaoutreach" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com/@pamojaoutreach" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://youtube.com/@pamojaoutreach" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
       </div>
@@ -565,10 +561,10 @@
       <div class="footer-col">
         <h4>Follow Us</h4>
         <div class="social-links">
-          <a href="https://facebook.com/pamojaoutreach" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://instagram.com/pamojaoutreach" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://tiktok.com/@pamojaoutreach" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="https://youtube.com/@pamojaoutreach" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://facebook.com/pamojaoutreach" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com/pamojaoutreach" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://tiktok.com/@pamojaoutreach" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://youtube.com/@pamojaoutreach" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
     </div>
@@ -579,7 +575,7 @@
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <button class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
   <link rel="preload" as="image" href="images/branding/hero image.webp">
   <script defer src="js/main.min.js"></script>
@@ -714,61 +710,6 @@
       compute();
       update();
       start();
-    })();
-  </script>
-  <script>
-    (function(){
-      var form = document.getElementById('contact-form');
-      if(!form) return;
-      var status = document.getElementById('form-status');
-      var submitBtn = document.getElementById('submit-btn');
-      form.addEventListener('submit', async function(e){
-        e.preventDefault();
-        e.stopImmediatePropagation();
-        var f = form.elements;
-        var name = (f.name.value || '').trim();
-        var email = (f.email.value || '').trim();
-        var phone = (f.phone.value || '').trim();
-        var subject = (f.subject.value || '').trim();
-        var message = (f.message.value || '').trim();
-        var website = (f.website.value || '').trim();
-        if(!form.checkValidity()){
-          form.reportValidity();
-          return;
-        }
-        submitBtn.disabled = true;
-        status.textContent = 'Sending...';
-        try{
-          if(website){
-            status.textContent = 'Thank you!';
-            form.reset();
-            submitBtn.disabled = false;
-            return;
-          }
-          var endpoint = '/api/contact';
-          try{
-            var test = await fetch('/.netlify/functions/contact', { method:'OPTIONS' });
-            if(test && (test.status===200 || test.status===405)) endpoint = '/.netlify/functions/contact';
-          }catch(_){}
-          var res = await fetch(endpoint, {
-            method:'POST',
-            headers:{'Content-Type':'application/json'},
-            body: JSON.stringify({name,email,phone,subject,message,website})
-          });
-          if(res.ok){
-            status.textContent = 'Thank you! Your message has been sent.';
-            form.reset();
-          }else{
-            var data = null;
-            try{ data = await res.json(); }catch(_){}
-            status.textContent = (data && data.error) ? data.error : 'Sorry, something went wrong. Please try again.';
-          }
-        }catch(err){
-          status.textContent = 'Network error. Please try again.';
-        }finally{
-          submitBtn.disabled = false;
-        }
-      });
     })();
   </script>
 </body>
