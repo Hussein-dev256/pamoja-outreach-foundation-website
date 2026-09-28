@@ -15,9 +15,9 @@ exports.handler = async (event) => {
   if (!name || name.length < 2 || !emailOk || !subject || subject.length < 2 || !message || message.length < 10) {
     return { statusCode: 400, body: JSON.stringify({ error: 'Please provide valid form inputs' }) };
   }
-  const to = process.env.TO_EMAIL || 'husseintech256@gmail.com';
+  const to = process.env.TO_EMAIL;
   const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
+  if (!to || !apiKey) {
     return { statusCode: 500, body: JSON.stringify({ error: 'Email service not configured' }) };
   }
   const html =

@@ -19,9 +19,9 @@ module.exports = async (req, res) => {
     res.status(400).json({ error: 'Please provide valid form inputs' });
     return;
   }
-  const to = process.env.TO_EMAIL || 'husseintech256@gmail.com';
+  const to = process.env.TO_EMAIL;
   const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
+  if (!to || !apiKey) {
     res.status(500).json({ error: 'Email service not configured' });
     return;
   }
